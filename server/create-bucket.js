@@ -8,7 +8,6 @@ const s3 = new AWS.S3({ apiVersion: '2006-03-01' });
 
 var bucketParams = {
     Bucket: 'user-images-' + uuidv4(),
-    
     };
     
 s3.createBucket(bucketParams, (err, data) => {
